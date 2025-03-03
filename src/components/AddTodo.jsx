@@ -1,7 +1,7 @@
 function AdTodo(){
   return  (
   <div className="container">
-  <div className="row">
+  <div className="row kg-row">
   <div className="col-6">
     <input type="text" placeholder='Enter Tdo Here'/>
     </div>
@@ -9,7 +9,7 @@ function AdTodo(){
     <input type='date'/>
   </div>
   <div className="col-2">
-  <button type="button" className="btn btn-success">ADD</button>
+  <button type="button" className="btn btn-success kg-button">ADD</button>
   </div>
 </div>
 </div>
