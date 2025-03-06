@@ -1,21 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import AppName from './components/AppName'
-import './App.css'
-import AddTodo from './components/AddTodo'
-import TodoItem1 from './components/TodoItem1'
-import TodoItem2 from './components/TodoItem2'
+import AppName from './components/AppName';
+import './App.css';
+import AddTodo from './components/AddTodo';
+import TodoItems from './components/TodoItems';
 
 function App() {
+
+  const todoItems = [{
+    name: "Buy Milk",
+    duedate : "04/12/2025",
+  },
+  {
+    name: "go to college",
+    duedate : "04/12/2025",
+  },
+]
   return (
   <center className='todo-container'>
     <AppName/>
       <AddTodo/>
-      <div className='item-container'>
-      <TodoItem1  />
-      <TodoItem2/>
-      </div>
+      <TodoItems todoItems={todoItems}></TodoItems>
+      
   </center>
 );
 }
